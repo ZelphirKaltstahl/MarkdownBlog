@@ -1,0 +1,72 @@
+{% from "nav_link.j2" import nav_link %}
+{% from "nav_link.j2" import nav_link_active %}
+{% from "nav_link.j2" import dropdown_menu_item_separator %}
+{% from "nav_link.j2" import nav_link_dropdown_label %}
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Zelphir's Markdown Blog</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			{# MAIN NAV #}
+			<ul class="nav navbar-nav">
+				{{ nav_link('/home', 'Home') }}
+				
+				{# LF2 #}
+				<li class="dropdown">
+					{{ nav_link_dropdown_label('/lf2', 'LF2') }}
+					<ul class="dropdown-menu">
+						{{ nav_link('/lf2/blog', 'Blog') }}
+						{{ nav_link('/lf2/intro', 'Introduction') }}
+						{{ dropdown_menu_item_separator() }}
+						{{ nav_link('/lf2/tools', 'Tools') }}
+						{{ nav_link('/lf2/recordings', 'Recordings') }}
+					</ul>
+				</li>
+
+				{# CHINESE #}
+				<li class="dropdown">
+					{{ nav_link_dropdown_label('/chinese', 'Chinese') }}
+					<ul class="dropdown-menu">
+						{{ nav_link('/chinese/blog', 'Blog') }}
+						{{ dropdown_menu_item_separator() }}
+						{{ nav_link('/chinese/daily_hanzi', 'Daily Hanzi') }}
+					</ul>
+				</li>
+
+				{# DEV #}
+				<li class="dropdown">
+					{{ nav_link_dropdown_label('/coding', 'Coding') }}
+					<ul class="dropdown-menu">
+						{{ nav_link('/coding/blog', 'Blog') }}
+						{{ dropdown_menu_item_separator() }}
+						{{ nav_link('/coding/resources', 'Resources') }}
+					</ul>
+				</li>
+			</ul>
+			
+			{# SEARCH #}
+			<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
+			{# ABOUT #}
+			<ul class="nav navbar-nav navbar-right">
+				{{ nav_link('/about', 'About') }}
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>

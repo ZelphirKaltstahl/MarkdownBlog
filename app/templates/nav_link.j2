@@ -1,0 +1,32 @@
+{% macro nav_link_active(link, label) %}
+		<li class="active"><a href="{{link}}">{{label}}</a></li>
+{% endmacro %}
+
+{% macro nav_link_dropdown_label(link, label) %}
+		<a href="{{link}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{label}} <span class="caret"></span></a>
+{% endmacro %}
+
+{% macro nav_link(link, label) %}
+		<li><a href="{{link}}">{{label}}</a></li>
+{% endmacro %}
+
+{% macro dropdown_menu_item_separator() %}
+	<li role="separator" class="divider"></li>
+{% endmacro %}
+
+{# {% macro nav_link_dropdown(title_label, title_link, items) %}
+	<li class="dropdown">
+		<a href="{{title_link}}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{title_label}} <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+			{% for key, value in my_dict.iteritems() %}
+				{% if key == 'separator' %}
+					{{dropdown_menu_item_separator}}
+				{% else %}
+					{{nav_link(key|e, value|e)}}
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</li>
+{% endmacro %} #}
+
+

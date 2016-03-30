@@ -1,0 +1,89 @@
+
+.content h1 {
+	text-shadow: 2px 2px 2px #CCCCCC;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.content img {
+	display: block;
+
+	max-height: 300px;
+	max-width: 400px;
+
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	border: 1px solid #202020;
+}
+
+.content article {
+	margin-bottom: 3em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.post-separator {
+	text-align: center;
+	
+	color: rgba(0, 0, 0, 0.3);
+
+	font-family: monospace;
+	font-size: 14pt;
+
+	line-height: 14pt;
+
+	vertical-align: middle;
+
+	background-color: rgba(200, 200, 200, 0.1);
+	
+	text-shadow: 
+		0px 0px 10px #303030;
+	
+	border-radius: 1em;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 
+		2px 0px 3px rgba(0, 0, 0, 0.15),
+		0px 2px 3px rgba(0, 0, 0, 0.15);
+
+	width: 16em;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+}
+
+.content article p {
+	text-align: justify;
+}
+
+.content article table {
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content article table td {
+	padding: 0.4em;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.content article table th {
+	padding: 0.4em;
+}
+
+.content article blockquote {
+	font-style: italic;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.content article ul {
+	list-style-position: inside;
+}
+
+.content article ol {
+	list-style-position: inside;
+}
