@@ -25,5 +25,13 @@ def mandarin_blog():
 	complete_html_content = post_renderer.render_posts_from('app/static/markdown/chinese/blog/')
 	return render_template('chinese_blog.j2', title='Chinese Blog', content=complete_html_content)
 
+@app.route('/coding/blog')
+def coding_blog():
+	return render_template('coding_blog.j2', title='Coding Blog', content='Coding Blog (yet to be coded :)')
+
+@app.route('/coding/resources')
+def coding_resources():
+	return render_template('coding_resources.j2', title='Coding Resources', content='Coding Resources (no resources here yet :)')
+
 if __name__ == '__main__':
 	app.run(debug=True)
