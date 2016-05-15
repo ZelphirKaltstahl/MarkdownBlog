@@ -82,8 +82,10 @@
 
 .content article ul {
 	list-style-position: inside;
+	margin-left: 2em;
 }
 
 .content article ol {
 	list-style-position: inside;
+	margin-left: 2em;
 }
