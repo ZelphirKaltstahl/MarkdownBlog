@@ -2,7 +2,7 @@
 
 I was told about a [Little Fighter Empire Forum](http://www.lf-empire.de/forum/) post describing the process of getting Little Fighter 2 to run under Linux. The post can be found [here](http://www.lf-empire.de/forum/showthread.php?tid=10042).
 
-Lets summarize the information. Your system needs to have the following tools installed:
+Let us summarize the information. Your system needs to have the following tools installed:
 
 * `wine`
 * `winetricks`

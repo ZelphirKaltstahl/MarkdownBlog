@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import mistune
 from FileReader import FileReader
 from helpers.filesystem_helper import get_all_files_in_folder
+
 app = Flask(__name__)
 
 @app.route('/')
