@@ -34,11 +34,13 @@
 
 		{% include 'header.j2' %}
 
-		<section class="content-container">
-			<section class="content">
-				{% block content %}{% endblock %}
+		<div class="content-container-max-width-wrapper">
+			<section class="content-container">
+				<section class="content">
+					{% block content %}{% endblock %}
+				</section>
 			</section>
-		</section>
+		</div>
 
 		{% include 'footer.j2' %}
 	</body>
