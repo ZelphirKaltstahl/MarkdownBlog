@@ -1,0 +1,45 @@
+.content .highlighttable td {
+	padding: 0em;
+	/*font-size: 10px;*/
+}
+
+.content .highlighttable .linenos .linenodiv > pre {
+	border-radius: 0px;
+	padding: none;
+}
+
+.content .highlighttable .linenos {
+	border: none;
+}
+.content .highlighttable .code {
+	border: none;
+}
+.content .highlighttable .code .highlight pre {
+	border-radius: 0px;
+	border-width: 1px;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+.highlighttable > tbody > tr > td.linenos > div > pre {
+	font-size: 12px;
+	line-height: 1.2em;
+	padding-top: 9.5px;
+	padding-bottom: 9.5px;
+}
+
+.highlighttable > tbody > tr > td.linenos > div > pre > a {
+	text-decoration: none;
+}
+
+.highlighttable > tbody > tr > td.linenos > div > pre > a:hover {
+	text-decoration: none;
+}
+
+.highlightable .linenos .linenodiv .special {
+	/*not specific enough?*/
+}
+
+.highlighttable > tbody > tr > .linenos > .linenodiv > pre > .special {
+	font-weight: bold;
+}

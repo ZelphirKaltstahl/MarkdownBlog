@@ -36,5 +36,12 @@ class HighlightRenderer(mistune.Renderer):
 				code=mistune.escape(code)
 			)
 		lexer = get_lexer_by_name(lang, stripall=True)
-		formatter = HtmlFormatter()
+		formatter = HtmlFormatter(
+			linenos='table',
+			linenospecial=4,
+			lineseparator='<br>',
+			lineanchors='code-line',
+			linespans='code-line',
+			anchorlinenos='lineno-line'
+		)
 		return highlight(code, lexer, formatter)

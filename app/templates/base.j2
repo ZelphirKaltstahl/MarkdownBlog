@@ -3,7 +3,7 @@
 	<head>
 		<title>{% block title %}{% endblock %}</title>
 		<meta charset="UTF-8">
-		
+
 		<!-- jQuery Minified -->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
 
@@ -27,6 +27,7 @@
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}">
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/post.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/code_block.css') }}">
 	</head>
 	<body>
 		{% include 'nav.j2' %}
@@ -38,7 +39,7 @@
 				{% block content %}{% endblock %}
 			</section>
 		</section>
-		
+
 		{% include 'footer.j2' %}
 	</body>
 </html>
