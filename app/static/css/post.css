@@ -59,6 +59,7 @@
 
 .content article p {
 	text-align: justify;
+	font-size: 1em;
 }
 
 .content article table {
@@ -92,4 +93,26 @@
 
 .content div.highlight pre {
 	background-color: #404040;
+}
+
+/* Post Meta Data Styling */
+.content article p.post-author {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+.content article p.post-title {
+	text-decoration: underline;
+}
+
+.content article p.post-date {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
+.content article p.post-meta-data {
+	font-style: italic;
+	text-align: center;
 }
