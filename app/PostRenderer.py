@@ -77,9 +77,8 @@ class MetaDataInlineLexer(InlineLexer):
 		self.default_rules.insert(3, 'meta_data')
 
 	def output_meta_data(self, match):
-		match_dict = match.groupdict()
-		attribute = match_dict['attribute']
-		value = match_dict['value']
+		attribute = match.group('attribute')
+		value = match.group('value')
 		print('FOUND ATTRIBUTE:', attribute)
 		print('FOUND VALUE:', value)
 		return self.renderer.meta_data(attribute, value)
