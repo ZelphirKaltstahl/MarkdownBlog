@@ -79,6 +79,4 @@ class MetaDataInlineLexer(InlineLexer):
 	def output_meta_data(self, match):
 		attribute = match.group('attribute')
 		value = match.group('value')
-		print('FOUND ATTRIBUTE:', attribute)
-		print('FOUND VALUE:', value)
 		return self.renderer.meta_data(attribute, value)
