@@ -13,15 +13,15 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Zelphir's Markdown Blog</a>
+			<a class="navbar-brand" href="/home">Zelphir's Blog</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			{# MAIN NAV #}
 			<ul class="nav navbar-nav">
-				{{ nav_link('/home', 'Home') }}
-				
+				<!-- {{ nav_link('/home', 'Home') }} -->
+
 				{# LF2 #}
 				<li class="dropdown">
 					{{ nav_link_dropdown_label('/lf2', 'LF2') }}
@@ -54,7 +54,7 @@
 					</ul>
 				</li>
 			</ul>
-			
+
 			{# SEARCH #}
 			<form class="navbar-form navbar-right" role="search">
 				<div class="form-group">
