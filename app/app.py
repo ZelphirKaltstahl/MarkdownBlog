@@ -14,7 +14,10 @@ def static_file_path(relative_path):
 @app.route('/index')
 @app.route('/home')
 def index():
-	return render_template('index.j2', title='HEADER')
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/home/')
+	)
+	return render_template('index.j2', title='Zelphir\'s Blog', content=complete_html_content)
 
 @app.route('/lf2/blog')
 def lf2_blog():
@@ -35,12 +38,21 @@ def lf2_intro():
 	)
 
 @app.route('/chinese/blog')
-def mandarin_blog():
+def chinese_blog():
 	complete_html_content = post_renderer.render_posts_from(
 		static_file_path('static/markdown/chinese/blog/')
 	)
 	return render_template(
 		'chinese_blog.j2', title='Chinese Blog', content=complete_html_content
+	)
+
+@app.route('/chinese/hanzi')
+def chinese_hanzi():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/chinese/hanzi/')
+	)
+	return render_template(
+		'chinese_hanzi.j2', title='Hanzi', content=complete_html_content
 	)
 
 @app.route('/coding/blog')
@@ -56,6 +68,15 @@ def coding_blog():
 def coding_resources():
 	return render_template(
 		'coding_resources.j2', title='Coding Resources', content='Coding Resources (no resources here yet :)'
+	)
+
+@app.route('/about')
+def about():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/about/')
+	)
+	return render_template(
+		'about.j2', title='About', content=complete_html_content
 	)
 
 if __name__ == '__main__':

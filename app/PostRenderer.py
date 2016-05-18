@@ -19,7 +19,7 @@ class PostRenderer:
 		self.markdown = mistune.Markdown(
 			renderer=self.highlight_renderer,
 			inline=self.meta_data_inline_lexer,
-			escape=False
+			escape=False,
 		)
 
 	def render_posts_from(self, directory_path):
@@ -32,7 +32,8 @@ class PostRenderer:
 		for file_name in file_list:
 			markdown_content = file_reader.read_file(directory_path + file_name)
 			post_content = self.markdown(markdown_content)
-			html_contents.append('<article>{post_content}</article><p class="post-separator">––––––––––––––––––––––––</p>'.format(post_content=post_content))
+			# html_contents.append('<article>{post_content}</article><p class="post-separator">––––––––––––––––––––––––</p>'.format(post_content=post_content))
+			html_contents.append('<article>{post_content}</article><p class="post-separator">––––</p>'.format(post_content=post_content))
 
 		complete_html_content = ''.join(html_contents)
 

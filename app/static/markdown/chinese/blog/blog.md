@@ -1,14 +1,12 @@
-## Characters 2016-05-15
+% title: German Exercises
 
+Some time ago I started writing a document for German learners and especially for Chinese people, who are learning German. It features many exercises, which are supposed to help eradicating mistakes I often hear or see German learners make. Many of the exercises have some example phrases, which show the correct usage of some language element and then give you phrases with gaps, which you need to fill with words in their correct form. Some exercises have explanations as well.
 
+The document is not completely translated to English yet and the Chinese translation is still in a very early stage of development, mostly because my Chinese is not good enough to translate the phrases. For the learner with some basic knowledge this document can be really useful already, though.
 
-<!--
-_Chinese_ `is` a **language**[^1].
+The document is written in [Markdown](https://daringfireball.net/projects/markdown/), which is then compiled into a PDF by [Pandoc](http://pandoc.org), using my own [Pandoc template](https://github.com/ZelphirKaltstahl/german-exercises/blob/master/template_book.latex). Sounds complicated, but is actually _waaay_ easier than writing TeX or LaTeX all the time and achieves a _separation of styling and content_, as we are used to see from HTML and CSS. In fact, Pandoc can also export to HTML, if you need that. It can basically export and import almost every format you can think of.
 
-Here is some inline math: $\lambda_2$ You see?
+You can find my document / project on [Github](https://github.com/ZelphirKaltstahl/german-exercises).
 
-$$a^2 + b^2 = c^2$$
-
-$$\frac{\sum^{2}_{i=0} a}{b}$$
-
-[^1]: : a natural language $a = b^2$. -->
+% author: Zelphir
+% date: 2016-05-18

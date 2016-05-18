@@ -5,7 +5,13 @@
 	margin-right: auto;
 	margin-bottom: 1.5em;
 	text-align: center;
-	/*text-decoration: underline;*/
+}
+
+.content h2, h3, h4, h5, h6 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 1.0em;
 }
 
 .content img {
@@ -22,39 +28,36 @@
 }
 
 .content article {
-	margin-bottom: 3em;
+	margin-bottom: 1.5em;
 	padding-left: 2em;
 	padding-right: 2em;
 }
 
 .post-separator {
+	font-size: 3em;
+	letter-spacing: 0.2em;
+
 	text-align: center;
 
 	color: rgba(0, 0, 0, 0.3);
 
 	font-family: monospace;
-	font-size: 14pt;
 
-	line-height: 14pt;
+	line-height: 1.6em;
 
 	vertical-align: middle;
 
-	background-color: rgba(200, 200, 200, 0.1);
-
 	text-shadow:
-		0px 0px 10px #303030;
+		0px 0px 15px #353535;
 
-	border-radius: 1em;
+	/*border-radius: 1em;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow:
 		2px 0px 3px rgba(0, 0, 0, 0.15),
-		0px 2px 3px rgba(0, 0, 0, 0.15);
-
-	width: 16em;
+		0px 2px 3px rgba(0, 0, 0, 0.15);*/
 
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2em;
 }
 
 .content article p {
@@ -66,6 +69,10 @@
 	margin-bottom: 1em;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.content article table tr:nth-child(even) {
+	background-color: rgba(220, 220, 220, 0.30);
 }
 
 .content article table td {
@@ -93,6 +100,17 @@
 
 .content div.highlight pre {
 	background-color: #404040;
+}
+
+.content > article {
+	font-family: Cantarell, FreeSans, LiberationSans, sans-serif;
+}
+
+
+.content > article code {
+	color: #E04025;
+	background-color: rgba(240, 240, 240, 0.5);
+	border-radius: 6px;
 }
 
 /* Post Meta Data Styling */
