@@ -6,7 +6,7 @@ The document is not completely translated to English yet and the Chinese transla
 
 The document is written in [Markdown](https://daringfireball.net/projects/markdown/), which is then compiled into a PDF by [Pandoc](http://pandoc.org), using my own [Pandoc template](https://github.com/ZelphirKaltstahl/german-exercises/blob/master/template_book.latex). Sounds complicated, but is actually _waaay_ easier than writing TeX or LaTeX all the time and achieves a _separation of styling and content_, as we are used to see from HTML and CSS. In fact, Pandoc can also export to HTML, if you need that. It can basically export and import almost every format you can think of.
 
-You can find my document / project on [Github](https://github.com/ZelphirKaltstahl/german-exercises).
+You can find my document / project on [Github](https://github.com/ZelphirKaltstahl/german-exercises) or download the [PDF file](https://github.com/ZelphirKaltstahl/german-exercises/raw/master/deutsch-uebungen.pdf) directly.
 
 % author: Zelphir
 % date: 2016-05-18
