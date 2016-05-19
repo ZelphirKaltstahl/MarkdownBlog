@@ -13,9 +13,7 @@ def get_all_files_in_folder(file_path, file_extensions=None):
 		for item in os.listdir(file_path):
 			if os.path.isfile(os.path.join(file_path, item)):
 				file_name_no_ext, file_extension = os.path.splitext(item)
-				print('FILE EXTENSION FOUND:', file_extension)
+				# print('FILE EXTENSION FOUND:', file_extension)
 				if file_extension[1:] in file_extensions:
 					file_names.append(item)
 		return sorted(file_names, reverse=True)
-
-		

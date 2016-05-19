@@ -37,6 +37,33 @@ def lf2_intro():
 		'lf2_blog.j2', title='Little Fighter 2', content=complete_html_content
 	)
 
+@app.route('/lf2/tools')
+def lf2_tools():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/lf2/tools/')
+	)
+	return render_template(
+		'lf2_blog.j2', title='Little Fighter 2 Tools', content=complete_html_content
+	)
+
+@app.route('/lf2/recordings')
+def lf2_recordings():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/lf2/recordings/')
+	)
+	return render_template(
+		'lf2_blog.j2', title='Little Fighter 2 Recordings', content=complete_html_content
+	)
+
+@app.route('/lf2/resources')
+def lf2_resources():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/lf2/resources/')
+	)
+	return render_template(
+		'lf2_blog.j2', title='Little Fighter 2 Resources', content=complete_html_content
+	)
+
 @app.route('/chinese/blog')
 def chinese_blog():
 	complete_html_content = post_renderer.render_posts_from(
@@ -66,8 +93,11 @@ def coding_blog():
 
 @app.route('/coding/resources')
 def coding_resources():
+	complete_html_content = post_renderer.render_posts_from(
+		static_file_path('static/markdown/coding/resources/')
+	)
 	return render_template(
-		'coding_resources.j2', title='Coding Resources', content='Coding Resources (no resources here yet :)'
+		'coding_blog.j2', title='Coding Blog', content=complete_html_content
 	)
 
 @app.route('/about')
