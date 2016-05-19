@@ -1,4 +1,4 @@
-% title: LF2 Likes and Dislikes
+# LF2 Likes and Dislikes
 
 ## Dislikes
 

@@ -1,4 +1,4 @@
-% title: Technologies
+# Technologies
 
 There are many technologies I have used in the past.
 

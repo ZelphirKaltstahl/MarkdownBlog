@@ -1,4 +1,4 @@
-% title: Likes and Dislikes
+# Likes and Dislikes
 
 ## Likes
 
