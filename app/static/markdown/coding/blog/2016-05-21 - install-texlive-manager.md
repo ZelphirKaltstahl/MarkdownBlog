@@ -22,7 +22,7 @@ I will only write about advantages here, because I did not discovered any disadv
 * Your source file will be easier to read, if you use for example Markdown or a similar simple language.
 * It is easier for not so tech-savvy people to add content to your document or to colaborate with you.
 * You can export your document to HTML and provide a CSS file for the styling, sort of like a counterpart for your Pandoc template when compiling a PDF file. This means you are able to have an online HTML version of a book and a PDF file, which are build from the same source. There are some free books online, which do this.
-* You get a document converter for other document types as well. Heck, you can even give those MS Office users their shitty **.doc** file, if absolutely necessary be, but remember [not to send them as attachement in emails](https://www.gnu.org/philosophy/po/no-word-attachments.ru-en.html) ;)
+* You get a document converter for other document types as well. Heck, you can even give those MS Office users their shitty **.doc** file, if absolutely necessary, but remember [not to send them as attachement in emails](https://www.gnu.org/philosophy/po/no-word-attachments.ru-en.html) ;)
 
 # Installing TeX Live
 
