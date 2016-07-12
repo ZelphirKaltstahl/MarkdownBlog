@@ -13,6 +13,7 @@
 }
 .content .highlighttable .code {
 	border: none;
+	/*overflow-x: scroll;*/
 }
 .content .highlighttable .code .highlight pre {
 	border-radius: 0px;
@@ -43,3 +44,18 @@
 .highlighttable > tbody > tr > .linenos > .linenodiv > pre > .special {
 	font-weight: bold;
 }
+
+/*.highlighttable td.code {
+	max-width: 48em;
+	word-wrap: break-word;
+	word-break:break-all;
+}*/
+
+/*.highlighttable > tbody > tr > .linenos > .linenodiv {
+	vertical-align: top;
+}*/
+
+/*table.highlighttable {
+	table-layout: fixed;
+	width: 85%;
+}*/
