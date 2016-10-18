@@ -58,6 +58,13 @@ I simply follow the instructions on <http://tug.org/texlive/quickinstall.html>.
 
 	After changing the `~/.bashrc` file, you will have to restart the terminal application, in order for it to notice the new `PATH` value.
 
+7. You might not be able to use `tlmgr` properly yet, because you might not have permissions to change files in the texlive directory under `/usr/local/texlive/`. In this case you can simply run the two commands to change ownership and group of the directory:
+
+		`chown -R user /usr/local/texlive/year`
+		`chgrp -R user /usr/local/texlive/year`
+
+	After this when you start the texlive manager you should not receive any warnings anymore.
+
 ## Useful Commands
 
 * start `tlmgr` with a GUI: `tlmgr --gui`
