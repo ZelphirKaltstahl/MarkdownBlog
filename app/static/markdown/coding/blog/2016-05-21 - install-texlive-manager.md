@@ -69,7 +69,7 @@ I simply follow the instructions on <http://tug.org/texlive/quickinstall.html>.
 
 Stack is a tool helping you to develop Haskell programs. We will not write any Haskell code, but we want to build Pandoc, which is a Haskell program, so we will use Stack for that.
 
-1. Get `stack` from <stackage.org> (I took the Linux in general version).
+1. Get `stack` from <https://www.stackage.org/> (I took the Linux in general version).
 2. Extract the archive and put the folder contained in some directory (in this example `~/bin`).
 3. Add stack to your path by editing the `~/.bashrc`:
 
